@@ -22,8 +22,8 @@ class Invoice
     private int $id;
     #[ORM\Column(name: 'invoice_number', type: Types::STRING)]
     private string $invoiceNumber;
-    #[ORM\Column(type: Types::DECIMAL, precision: 10, scale: 2)]
-    private float $amount;
+    #[ORM\Column(type: Types::BIGINT)]
+    private int $amount;
     #[ORM\Column(enumType: InvoiceStatus::class)]
     private InvoiceStatus $status;
     #[ORM\Column(name: 'created_at', type: Types::DATETIME_MUTABLE)]
