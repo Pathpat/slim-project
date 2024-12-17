@@ -1,0 +1,7 @@
+.idea
+.env
+/docker
+/vendor
+/storage
+.phpunit.result.cache
+composer.lock
